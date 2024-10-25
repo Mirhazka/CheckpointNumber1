@@ -1,9 +1,9 @@
 # Exercice 3 - Quiz
 
 ## Question 1 - Donne une ligne de commande bash qui permet de lister la liste des utilisateurs d'un système Linux
-cut -d: -f1 /etc/passwd
-ou
-cat /etc/passwd
+cut -d: -f1 /etc/passwd \
+ou \
+cat /etc/passwd \
 
 ## Quelle commande bash permet de changer les droits du fichier myfile en rwxr--r-- ?
 chmod 744
