@@ -12,15 +12,16 @@ chmod 744
 Il suffit de ne pas l'add ni de le commit.
 
 ## Quelles commandes git utiliser pour fusionner les branches main & test_valide ?
+Avec la commande **git merge**
 
 ## Donne la(les) ligne(s) de commande (s) bash pour afficher le texte suivant :
 > Malgré le prix élevé de 100$, il a dit "Bonjour !" au vendeur : \
   "Bonjour est-ce que ce que ce clavier fonctionne bien ?" \
   "Evidemment ! On peut tout écrire avec, que ce soit des pipes | ou bien des backslash \\ !" \
   "Même des tildes ~ ?" \
-  "Evidemment !" \
+  "Evidemment !"
 
-Cela donne en bash : \
+Cela donne en bash :
 > echo "Malgré le prix élevé de 100$, il a dit "Bonjour !" au vendeur :" \
   echo "  - Bonjour est-ce que ce clavier fonctionne bien ?" \
   echo "  - Evidemment ! On peut tout écrire avec, que ce soit des pipes | ou bien des backslash \\ !" \
@@ -31,9 +32,9 @@ Cela donne en bash : \
 > w]ilder@Ubuntu:~$ jobs -l \
  [1]  37970 En cours d'exécution   gedit & \
  [2]  37971 En cours d'exécution   xeyes & \
- [3]- 37972 En cours d'exécution   sleep \
+ [3]- 37972 En cours d'exécution   sleep
 
-Avec la commande systemctl status **nom du processus** \
+Avec la commande **systemctl status <nom du processus>**
 
 ## Quels matériels réseaux sont sur la couche 2 et sur la couche 3 du modèle OSI ? Donne leurs spécificités
 * Couche 2 :
