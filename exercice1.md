@@ -12,3 +12,4 @@
 ![afterreboot](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/Exo1/afterRebootSdb1.png)
 ![cfdiskSWAP](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/Exo1/cfdiskDevSdbSwap.png)
 ![mountstartSWAP](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/Exo1/mountStartSdb2Swap.png)
+![lsblk](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/lsblk.png)
