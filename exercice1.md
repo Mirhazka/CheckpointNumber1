@@ -36,3 +36,33 @@ J'ai un disque dur de 10Go que je vais partitioner en deux avec :
 ## Partition sdb2
 ### Step 1 : Vérification de l'état des disques présets après partionnement du sdb2
 ![step1](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/7_lsblk-fdisk(rappel).png)
+### Step 2 : Partionnement du disque sdb pour avoir notre disque sdb2 de 4Go sur plusieurs étapes avec la commande cfdisk /dev/sdb
+> Attention, étant donnée que le disque sdb a déjà été partitionner pas besoin de choisir à nouveau le type d'étiquette car nous sommes déjà en dos
+
+#### Je choisis l'espace libre et je vais sur "Nouvelle"
+![step2-1](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/8-0_cfdisk-sdB.png)
+#### Je spécifie la taille du partionnement à 4Go
+![step2-2](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/8-1_cfdisk-sdB.png)
+#### Je spécifie que la partition sera "primaire"
+![step2-3](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/8-2_cfdisk-sdB.png)
+#### La partion est prête, il faut maintenant "Ecrire" pour éviter de tout perdre
+![step2-4](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/8-3_cfdisk-sdB.png)
+### Step 3 : Vérification du partitionnement avec la commande fdsik -l
+![step3](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/9_fdisk-l.png)
+### Step 4 : Eteindre le swap du disque sda5
+![step4](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/10_swapOffsdA5.png)
+### Step 5 : Formatage au format swap et démarrer sdb2 en swap
+![step5](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/11_mkswap%26swapOnsdB2.png)
+### Step 6 : Modification du fichier fstab pour garder le swapof du sda5 et le swapon du sdb2 au démarrage
+![step6](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/12_fstab-sdb2.png)
+
+## Finalités
+Après redémarrage, j'ai refait la commande lsblk pour m'assurer que toutes les modifications ont été sauvegardés :
+![final](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/13_reboot-sdb2.png)
+
+
+
+
+
+
+
