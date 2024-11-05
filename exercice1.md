@@ -18,7 +18,20 @@ J'ai un disque dur de 10Go que je vais partitioner en deux avec :
 ![step3-1](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/2-0_cfdisk-sdB.png)
 #### Je choisis l'espace libre et je vais sur "Nouvelle"
 ![step3-2](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/2-1_cfdisk-sdB.png)
-
+#### Je spécifie la taille du partionnement à 6Go
+![step3-3](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/2-2_cfdisk-sdB.png)
+#### Je spécifie que la partition sera "primaire"
+![step3-4](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/2-3_cfdisk-sdB.png)
+#### La partion est prête, il faut maintenant "Ecrire" pour éviter de tout perdre
+![step3-5](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/2-4_cfdisk-sdB.png)
+#### Vérification du partitionnement avec la commande fdsik -l
+![step4](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/3_fdisk-l.png)
+#### Création du dossier mnt/data puis formatage au format ext4 et montage du disque sur /mnt/data
+![step5](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/4_mkfs%26mount-sdb1.png)
+#### Modification du fichier fstab pour garder le montage au montage
+![step6](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/5_fstab-sdb1.png)
+#### Vérification que le disque est bien monté sur /mnt/data après reboot de la machine
+![step7](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/6_reboot-sdb1.png)
 
 
 ## Partition sdb2
