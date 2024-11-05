@@ -24,14 +24,15 @@ J'ai un disque dur de 10Go que je vais partitioner en deux avec :
 ![step3-4](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/2-3_cfdisk-sdB.png)
 #### La partion est prête, il faut maintenant "Ecrire" pour éviter de tout perdre
 ![step3-5](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/2-4_cfdisk-sdB.png)
-#### Vérification du partitionnement avec la commande fdsik -l
+### Step 4 : Vérification du partitionnement avec la commande fdsik -l
 ![step4](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/3_fdisk-l.png)
-#### Création du dossier mnt/data puis formatage au format ext4 et montage du disque sur /mnt/data
+### Step 5 : Création du dossier mnt/data puis formatage au format ext4 et montage du disque sur /mnt/data
 ![step5](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/4_mkfs%26mount-sdb1.png)
-#### Modification du fichier fstab pour garder le montage au montage
+### Step 6 : Modification du fichier fstab pour garder le montage au montage
 ![step6](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/5_fstab-sdb1.png)
-#### Vérification que le disque est bien monté sur /mnt/data après reboot de la machine
+### Step 7 : Vérification que le disque est bien monté sur /mnt/data après reboot de la machine
 ![step7](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/6_reboot-sdb1.png)
 
-
 ## Partition sdb2
+### Step 1 : Vérification de l'état des disques présets après partionnement du sdb2
+![step1](https://github.com/Mirhazka/CheckpointNumber1/blob/main/Image/7_lsblk-fdisk(rappel).png)
